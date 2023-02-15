@@ -148,3 +148,13 @@ function initMap() {
       ]
     });
 }
+
+// send email
+function sendMail(){
+  email_To = "bvassilaros@gmail.com";
+  email_Subject = "Personal Website - Github";
+  email_Body = document.getElementById("email_body").value;
+  mailTo = "mailto:"+email_To+"?subject="+email_Subject+"&body="+email_Body;
+  //alert(email_Body)
+  window.open(mailTo); 
+}
